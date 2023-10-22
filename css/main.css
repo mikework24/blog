@@ -1,0 +1,277 @@
+/******************/
+/***** COMMON *****/
+/******************/
+* {
+	box-sizing: border-box;
+}
+label {
+	font-size: 0.9em;
+	color: #666;
+}
+img {
+	width: 45%;
+	border-radius: 2%;
+}
+hr {
+	border: 1px dashed lightgray;
+}
+a {
+	color: darkred;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.small {
+	font-size: 0.8em;
+	color: gray;
+}
+.fleft {
+	float: left;
+	margin-right: 10px;
+}
+.fright {
+	float: right;
+	margin-left: 10px;
+}
+.clearer {
+	clear: both;
+}
+.success {
+	color: green;
+	font-size: 0.8em;
+}
+.error {
+	color: red;
+	font-size: 0.9em;
+}
+.info {
+	color: darkorange;
+	font-size: 0.8em;
+}
+input::placeholder {
+   opacity: 0.9;
+	font-size: 0.9em;
+}
+
+input[type="submit"] {
+	color: #666;
+	cursor: pointer;
+}
+input[type="submit"]:hover {
+	background-color: lightblue;
+	color: white;
+}
+
+
+
+/*********************/
+/***** INDEX.PHP *****/
+/*********************/
+body {
+	font-family: georgia;
+	letter-spacing: 0.04em;
+	padding: 0 50px 50px 50px;
+	line-height: 1.5em;
+}
+h1, h2 {
+	font-size: 2em;
+	letter-spacing: 0.3em;
+	color: darkred;
+}
+h2 {
+	letter-spacing: 0.1em;
+	font-size: 1.2em;
+}
+
+/* Form Elements */
+input {
+	display: inline-block;
+	width: 150px;
+}
+.marker {
+	font-weight: bold;
+	color: darkred;
+	margin-left: 5px;
+}
+
+/* Kommentar-Formular */
+.blogEntry form {
+	margin: 20px 0;
+}
+.blogEntry label {
+	color: darkred;
+	font-size: 0.8em;
+}
+.blogEntry input, .blogEntry textarea {
+	width: 97%;
+	border-radius: 5px;
+	border: 1px solid #999;
+	padding: 5px;
+}
+.blogEntry textarea {
+	height: 100px;
+}
+
+a.expand {
+	font-size: 0.8em;
+}
+a.expand:hover {
+	font-size: 0.8em;
+}
+.blogs {
+	border: 3px solid lightgray;
+	border-radius: 10px;
+	width: 60%;
+	padding: 20px;
+}
+.headline {
+	color: darkgray;
+}
+.author {
+	color: darkgray;
+}
+.categories {
+	width: 25%;
+	padding: 50px 0;
+	border: 3px solid lightgray;
+	border-radius: 10px;
+	text-align: center;
+}
+.categories a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px;
+	font-weight: bold;
+	color: darkgray;
+	margin-bottom: 20px;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+.categories a:hover, .categories a.active {
+	border: 1px solid darkred;
+	color: darkred;
+}
+.comment {
+	color: #666;
+	font-size: 0.8em;
+	border-top: 1px solid #999;
+}
+.countComments {
+	color: darkred;
+	float: right;
+	font-size: 0.7em;
+}
+
+
+/*************************/
+/***** DASHBOARD.PHP *****/
+/*************************/
+body.dashboard {
+	padding-bottom: 10px;
+}
+.forms, imageUpload {
+	width: 45%;
+	border: 1px solid lightgray;
+	border-radius: 10px;
+	padding: 0 20px;
+}
+h2.dashboard {
+	color: darkgray;
+}
+.name {
+	color: darkred;
+}
+.bold {
+	font-weight: bold;
+}
+
+/* Form Elements */
+form.dashboard {
+	margin-bottom: 83px;
+	font-size: 0.8em;
+	color: #666;
+}
+input.dashboard, select.dashboard, textarea.dashboard, imageUpload {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: 1px solid darkgray;
+	padding: 5px;
+}
+imageUpload {
+	padding: 20px;
+}
+input[type="file"] {
+	width: 345px;
+}
+input[type="submit"].dashboard {
+	height: 50px;
+}
+input[type="checkbox"] {
+	width: 5px;
+	margin: 20px 0;
+}
+input[type="radio"] {
+	width: 20px;
+	margin-bottom: 15px;
+}
+select.dashboard {
+	color: #666;
+}
+textarea.dashboard {
+	height: 400px;
+}
+.alignment {
+	text-align: right;
+	color: #666;
+	width: 150px;
+	padding: 3px 10px;
+	font-weight: normal;
+	border-radius: 5px;
+	border: 1px solid darkgray;
+}
+
+/********** SPECIAL POPUP MESSAGES STYLES **********/
+popupBox {
+	border: 1px solid darkorange;
+	box-shadow: 20px 10px 25px 0px rgba(51,51,51,0.5);
+	border-radius: 10px;
+	background-color: rgba(230,230,230,0.9);
+	width: 50%;
+	margin: auto;	
+	text-align: center;
+	color: #666;
+	padding: 25px;
+	position: fixed;
+   margin: auto;
+	left: 25%;
+	top: 40%;
+	font-size: 1.3rem;
+}
+popupBox p {
+	color: black;
+}
+
+popupBox a {
+	border-radius: 5px;
+	padding: 5px 8px;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 1.0rem;
+}
+popupBox a:hover, popupBox a.button:hover {
+	background-color: rgba(255,140,0,0.3);
+}
+popupBox a.button {
+	background-color: rgba(255,255,255,0.3);
+	border: 1px solid gray;
+	color: gray;
+	margin-bottom: 20px;
+}
+popupBox a.button:hover {
+	color: black;
+}
+
+
